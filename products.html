@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our delicious catalog of breads, pastries, and custom cakes at Sweet Crumbs Bakery.">
+    <title>Sweet Crumbs Bakery - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sweet Crumbs Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2>Our Bakery Catalog</h2>
+            <div class="search-container">
+                <input type="text" id="productSearch" placeholder="Search for breads, cakes, pastries..." onkeyup="filterProducts()">
+            </div>
+            
+            <div class="grid-container" id="productGrid">
+                <div class="card" data-name="Artisanal Sourdough Bread">
+                    <img src="images/sourdough_bread.jpg" alt="Artisanal Sourdough Bread">
+                    <h3>Artisanal Sourdough</h3>
+                    <p>Crispy crust with a soft, airy center. Fermented for 24 hours.</p>
+                    <span class="price">R45.00</span>
+                </div>
+                <div class="card" data-name="Custom Birthday Cake">
+                    <img src="images/custom_cake.jpg" alt="Custom Birthday Cake">
+                    <h3>Custom Birthday Cake</h3>
+                    <p>Tailor-made multi-tier cakes for your special celebrations.</p>
+                    <span class="price">R450.00</span>
+                </div>
+                <div class="card" data-name="Buttery Croissant">
+                    <img src="images/croissants_danishes.jpg" alt="Buttery Croissant">
+                    <h3>Buttery Croissant</h3>
+                    <p>Flaky, golden layers baked fresh every morning.</p>
+                    <span class="price">R25.00</span>
+                </div>
+                <div class="card" data-name="Assorted Bread Basket">
+                    <img src="images/bread_basket.jpg" alt="Assorted Fresh Bread Basket">
+                    <h3>Assorted Bread Basket</h3>
+                    <p>A mix of freshly baked dinner rolls, ciabattas, and rustic loaves.</p>
+                    <span class="price">R85.00</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

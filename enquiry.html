@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your custom cake or catering inquiries to Sweet Crumbs Bakery.">
+    <title>Sweet Crumbs Bakery - Enquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sweet Crumbs Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Custom Order & Product Enquiry</h2>
+            <form id="enquiryForm" onsubmit="return validateEnquiryForm(event)">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="0821234567">
+                </div>
+                <div class="form-group">
+                    <label for="productType">Enquiry Type:</label>
+                    <select id="productType" name="productType" required>
+                        <option value="">Select an option</option>
+                        <option value="cake">Custom Celebration Cake</option>
+                        <option value="catering">Event Catering</option>
+                        <option value="sponsor">Sponsorship / Community</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Details / Date Needed:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Enquiry</button>
+                <p id="formFeedback" class="feedback"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

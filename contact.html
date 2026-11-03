@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Shawn Mametsa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Sweet Crumbs Bakery for store hours, location, and general queries.">
+    <title>Sweet Crumbs Bakery - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sweet Crumbs Bakery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Visit us at our bakery or send us a general message below.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Location & Hours</h3>
+                    <p><strong>Address:</strong> 152 Main Street, Bakery District</p>
+                    <p><strong>Hours:</strong> Mon - Sat: 07:00 AM - 17:00 PM</p>
+                    <p><strong>Email:</strong> info@sweetcrumbsbakery.co.za</p>
+                </div>
+                
+                <div class="form-container">
+                    <form id="contactForm" onsubmit="return handleContactSubmission(event)">
+                        <div class="form-group">
+                            <label for="cName">Your Name:</label>
+                            <input type="text" id="cName" name="cName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cEmail">Your Email:</label>
+                            <input type="email" id="cEmail" name="cEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cMessage">Message:</label>
+                            <textarea id="cMessage" name="cMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sweet Crumbs Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
